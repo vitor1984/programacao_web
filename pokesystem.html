@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokeystem</title>
+</head>
+<style>
+    form {
+        margin: 0 auto;
+        width: 400px;
+        border: 1px solid gray;
+        border-radius: 1px;
+        padding: 10px;
+        background-color: cornsilk;
+    }
+    
+    form div+div {
+        margin-top: 15px;
+    }
+    
+    label {
+        text-align: right;
+        display: inline-block;
+        width: 80px;
+    }
+    
+    textarea {
+        font: 12px sans-serif;
+        width: 300px;
+        border: 1px solid teal;
+        border-radius: 3px;
+        box-sizing: border-box;
+        vertical-align: top;
+        height: 100px;
+    }
+    
+    button {
+        margin-left: 330px;
+    }
+    
+    input {
+        width: 295px;
+        border: 1px solid teal;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+    body {
+        background-color: rgb(142, 207, 207);
+    }
+</style>
+
+<body>
+    <div id="form_pokesystem">
+        <form action="pokesystem.php" method="GET">
+            <div name="titulo">
+                <h3>Pokesystem</h3>
+            </div>
+            <div name="nome">
+                <label>Nome:</label>
+                <input type="text" id="nome_cliente" placeholder="Digite o nome do seu Pokemon" />
+            </div>
+            <div name="Tipo">
+                <label>Tipo:</label>
+                <select id="tipo">
+                        <option value="">--selecione</option>
+                        <option value="eletrico">Eletrico</option>
+                        <option value="fogo">fogo</option>
+                        <option value="agua">agua</option>
+                        <option value="terra">terra</option>
+                        <option value="gelo">gelo</option>    
+                        <option value="psiquico">psiquico</option>
+                        <option value="planta">planta</option>
+                    </select>
+
+            </div>
+            <div name="poder">
+                <label>ataque:</label>
+                <input type="number" placeholder="0-100" />
+                <label>defesa:</label>
+                <input type="number" placeholder="0-100" />
+            </div>
+
+            <div name="evoluido">
+                <label>evoluido</label>
+                <input type="radio"> Sim
+                <input type="radio"> Não
+            </div>
+            <div name="descrição">
+                <label>descrição</label>
+                <textarea id="descrição" placeholder="quais as caracteristicas desse pokemon" cols="30" rows="10"></textarea>
+            </div>
+            <div name="botão">
+
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
